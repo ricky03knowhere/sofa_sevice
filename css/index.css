@@ -1,0 +1,67 @@
+body {
+  font-family: "Aleo", serif;
+  color: #0D0D0D;
+}
+
+#navbar {
+  font-family: "BrandonGrotesqueWeb-Medium", serif;
+}
+#navbar .btn-action {
+  border-radius: 50px;
+  background: #F20587;
+  border-color: #BF1774;
+  height: 1em;
+  line-height: 0.2em;
+  margin: 0 1em;
+  text-align: center;
+  padding: 1em 2em;
+}
+
+#carousels .carousel-item {
+  position: relative;
+  height: 77vh;
+  transition: transform 1s ease-in-out;
+}
+#carousels .carousel-item img {
+  width: 30% !important;
+  position: absolute;
+  right: 3em;
+  bottom: 1em;
+}
+#carousels .carousel-item .carousel-caption {
+  position: absolute;
+  top: 10em;
+  left: 3.7em;
+  text-align: left;
+}
+#carousels .carousel-item .carousel-caption h5 {
+  font-family: "BrandonGrotesqueWeb-Medium", serif;
+  text-shadow: 1px 1px 1px rgba(242, 5, 135, 0.6);
+  text-transform: capitalize !important;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #0D0D0D;
+}
+#carousels .carousel-item .carousel-caption p {
+  font-size: 1rem;
+  color: #0D0D0D;
+  margin-top: 2em;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+}
+#carousels .carousel-indicators button {
+  background: #F20587;
+  border-radius: 50px;
+  width: 7px;
+  height: 1px;
+}
+#carousels .carousel-control-prev, #carousels .carousel-control-next {
+  width: 30px;
+  height: 30px;
+  font-size: 1.8rem;
+  color: #0D0D0D;
+  margin: 330px 20px 0;
+  text-shadow: 1px 1px 1px rgba(242, 5, 135, 0.6);
+}
+
+/*# sourceMappingURL=index.css.map */
