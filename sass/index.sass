@@ -1,9 +1,17 @@
-$primary-color: #F20587 
+// Base Colors
+$primary-color: #f20587 
 $secondary-color: #F29BD4 
-$ternary-color: #F2F2F2 
+$ternary-color: #f2f2f2 
 $text-color: #0D0D0D 
-$complementary-color: #BF1774
 
+// Utils Colors
+$shadow-color: rgba(242, 5, 135, 0.6)
+$complementary-color: #BF1774
+$info-color: #1DDEF2
+$warning-color: #F2DE4E
+$success-color: #1C98A6
+
+// Fonts
 $primary-font: 'BrandonGrotesqueWeb-Medium'
 $secondary-font: 'Aleo'
 
@@ -23,6 +31,7 @@ body
     margin: 0 1em
     text-align: center
     padding: 1em 2em
+    color: $ternary-color
 
 // Carousel
 #carousels
@@ -46,12 +55,13 @@ body
 
       h5
         font-family: $primary-font, serif
-        text-shadow: 1px 1px 1px rgba(242, 5, 135, 0.6)
+        text-shadow: 1px 1px 1px $shadow-color
         text-transform: capitalize !important
         font-size: 2.8rem
         font-weight: bold
         color: $text-color
       p
+        text-shadow: .5px .5px 1px $shadow-color
         font-size: 1rem
         color: $text-color
         margin-top: 2em
@@ -69,5 +79,84 @@ body
     height: 30px
     font-size: 1.8rem
     color: $text-color
-    margin: 330px 20px 0
-    text-shadow: 1px 1px 1px rgba(242, 5, 135, 0.6)
+    margin: 260px 20px 0
+    text-shadow: 1px 1px 1px $shadow-color
+
+  .btn-action
+    border-radius: 50px
+    background: $primary-color
+    border-color: $complementary-color
+    // height: 1em
+    // line-height: 1em
+    font-weight: bold
+    margin: 0 1em
+    text-align: center
+    padding: .4em 2em
+    color: $ternary-color
+    position: absolute
+    top: 50vh
+    left: 2.6em
+
+    &:nth-last-child(1)
+      background: $success-color
+      left: 12em
+    
+    i
+      font-size: 1.2rem
+
+// Layanan
+#layanan
+  margin-top: -5em
+  background: $ternary-color
+
+  h3
+    font-size: 1.5rem
+    text-shadow: 1px 1px 1px $shadow-color
+    border-bottom: 3px solid $shadow-color
+    position: relative
+    width: 5em
+    margin: 1em  auto 3em !important
+    text-align: center
+    
+  h4
+    font-family: $primary-font, serif
+    text-shadow: 1px 1px 1px $shadow-color
+    text-transform: capitalize !important
+    font-size: 1.8rem
+    font-weight: bold
+    color: $text-color
+    margin: .5em 0
+  
+  ul
+    border-radius: 1em
+    text-shadow: .5px .5px 1px $shadow-color
+    box-shadow: 0 0 20px 3px $shadow-color
+    margin-top: 7em
+
+  .row
+    margin: 0 3em
+
+    .col-md-5
+      margin-bottom: 8em !important
+
+  .layanan-img
+    width: 90%
+    margin-left: 4em
+
+  .img-frame
+    &::before
+      content: ""
+      display: block
+      width: 40%
+      height: 70%
+      position: absolute
+      background-image: url(/img/icons/frame222.png)
+      background-position: center
+      background-size: cover
+      margin-top: -2em
+      margin-left: 4em
+
+    &.second
+      margin-left: -5em
+      width: 100%
+        

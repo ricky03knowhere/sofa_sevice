@@ -8,13 +8,14 @@ body {
 }
 #navbar .btn-action {
   border-radius: 50px;
-  background: #F20587;
+  background: #f20587;
   border-color: #BF1774;
   height: 1em;
   line-height: 0.2em;
   margin: 0 1em;
   text-align: center;
   padding: 1em 2em;
+  color: #f2f2f2;
 }
 
 #carousels .carousel-item {
@@ -43,6 +44,7 @@ body {
   color: #0D0D0D;
 }
 #carousels .carousel-item .carousel-caption p {
+  text-shadow: 0.5px 0.5px 1px rgba(242, 5, 135, 0.6);
   font-size: 1rem;
   color: #0D0D0D;
   margin-top: 2em;
@@ -50,7 +52,7 @@ body {
   word-spacing: 10px;
 }
 #carousels .carousel-indicators button {
-  background: #F20587;
+  background: #f20587;
   border-radius: 50px;
   width: 7px;
   height: 1px;
@@ -60,8 +62,83 @@ body {
   height: 30px;
   font-size: 1.8rem;
   color: #0D0D0D;
-  margin: 330px 20px 0;
+  margin: 260px 20px 0;
   text-shadow: 1px 1px 1px rgba(242, 5, 135, 0.6);
+}
+#carousels .btn-action {
+  border-radius: 50px;
+  background: #f20587;
+  border-color: #BF1774;
+  font-weight: bold;
+  margin: 0 1em;
+  text-align: center;
+  padding: 0.4em 2em;
+  color: #f2f2f2;
+  position: absolute;
+  top: 50vh;
+  left: 2.6em;
+}
+#carousels .btn-action:nth-last-child(1) {
+  background: #1C98A6;
+  left: 12em;
+}
+#carousels .btn-action i {
+  font-size: 1.2rem;
+}
+
+#layanan {
+  margin-top: -5em;
+  background: #f2f2f2;
+}
+#layanan h3 {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 1px rgba(242, 5, 135, 0.6);
+  border-bottom: 3px solid rgba(242, 5, 135, 0.6);
+  position: relative;
+  width: 5em;
+  margin: 1em auto 3em !important;
+  text-align: center;
+}
+#layanan h4 {
+  font-family: "BrandonGrotesqueWeb-Medium", serif;
+  text-shadow: 1px 1px 1px rgba(242, 5, 135, 0.6);
+  text-transform: capitalize !important;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0D0D0D;
+  margin: 0.5em 0;
+}
+#layanan ul {
+  border-radius: 1em;
+  text-shadow: 0.5px 0.5px 1px rgba(242, 5, 135, 0.6);
+  box-shadow: 0 0 20px 3px rgba(242, 5, 135, 0.6);
+  margin-top: 7em;
+}
+#layanan .row {
+  margin: 0 3em;
+}
+#layanan .row .col-md-5 {
+  margin-bottom: 8em !important;
+}
+#layanan .layanan-img {
+  width: 90%;
+  margin-left: 4em;
+}
+#layanan .img-frame::before {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 70%;
+  position: absolute;
+  background-image: url(/img/icons/frame222.png);
+  background-position: center;
+  background-size: cover;
+  margin-top: -2em;
+  margin-left: 4em;
+}
+#layanan .img-frame.second {
+  margin-left: -5em;
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */
