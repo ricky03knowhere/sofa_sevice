@@ -5,6 +5,7 @@ body {
 
 #navbar {
   font-family: "BrandonGrotesqueWeb-Medium", serif;
+  padding: 0;
 }
 #navbar .btn-action {
   border-radius: 50px;
@@ -139,6 +140,203 @@ body {
 #layanan .img-frame.second {
   margin-left: -5em;
   width: 100%;
+}
+
+#bahan {
+  height: 2000px;
+}
+#bahan h3 {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 1px rgba(242, 5, 135, 0.6);
+  border-bottom: 3px solid rgba(242, 5, 135, 0.6);
+  position: relative;
+  width: 6.5em;
+  margin: 1em auto 3em !important;
+  text-align: center;
+}
+#bahan .container {
+  margin-top: 6em !important;
+}
+#bahan .container > .row {
+  height: 25em !important;
+}
+#bahan .container .tagline {
+  padding-left: 2.8em;
+  align-self: center;
+}
+#bahan .container .tagline h4 {
+  font-family: "BrandonGrotesqueWeb-Medium", serif;
+  color: #f2f2f2;
+  font-size: 2.6rem;
+  line-height: 1.5em;
+  word-spacing: 0.5em;
+  text-shadow: 2px 2px 6px #0D0D0D;
+  -webkit-text-stroke: 1.8px #0D0D0D;
+}
+#bahan .container .tagline h4::before {
+  content: "";
+  display: block;
+  width: 15em;
+  height: 10em;
+  position: absolute;
+  background-image: url(/img/icons/background3.png);
+  background-position: center;
+  background-size: cover;
+  z-index: -999;
+  margin-top: -2.2em;
+  margin-left: -1.8em;
+}
+#bahan .container .bahan h5 {
+  text-shadow: 1px 1px 1px rgba(242, 5, 135, 0.6);
+  margin-bottom: 1em;
+}
+#bahan .container .bahan .col-md-4 {
+  padding-right: 0;
+}
+#bahan .container .bahan .col-md-8 {
+  padding-left: 0;
+  overflow: hidden;
+}
+#bahan .container .bahan .row {
+  height: 20em;
+}
+#bahan .container .bahan .kain img, #bahan .container .bahan .oscar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#bahan .container .bahan .kain, #bahan .container .bahan .oscar {
+  position: relative;
+}
+#bahan .container .bahan .kain > .item-1::before, #bahan .container .bahan .oscar > .item-1::before {
+  display: grid;
+  content: "Mb tech";
+  background: rgba(0, 0, 0, 0.6);
+  width: 33.3%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  align-content: center;
+  color: #f2f2f2;
+  font-family: "BrandonGrotesqueWeb-Medium", serif;
+  text-shadow: 2px 2px 6px rgba(242, 5, 135, 0.6);
+  -webkit-text-stroke: 0.3px #f20587;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  transition: opacity 0.7s;
+  opacity: 0;
+}
+#bahan .container .bahan .kain > .item-2::before, #bahan .container .bahan .oscar > .item-2::before {
+  display: grid;
+  content: "Force";
+  background: rgba(0, 0, 0, 0.6);
+  width: 33.3%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  align-content: center;
+  color: #f2f2f2;
+  font-family: "BrandonGrotesqueWeb-Medium", serif;
+  text-shadow: 2px 2px 6px rgba(242, 5, 135, 0.6);
+  -webkit-text-stroke: 0.3px #f20587;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  transition: opacity 0.7s;
+  opacity: 0;
+}
+#bahan .container .bahan .kain > .item-3::before, #bahan .container .bahan .oscar > .item-3::before {
+  display: grid;
+  content: "Ateja";
+  background: rgba(0, 0, 0, 0.6);
+  width: 33.3%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  align-content: center;
+  color: #f2f2f2;
+  font-family: "BrandonGrotesqueWeb-Medium", serif;
+  text-shadow: 2px 2px 6px rgba(242, 5, 135, 0.6);
+  -webkit-text-stroke: 0.3px #f20587;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  transition: opacity 0.7s;
+  opacity: 0;
+}
+#bahan .container .bahan .kain > .item-4::before, #bahan .container .bahan .oscar > .item-4::before {
+  display: grid;
+  content: "Lapaloma";
+  background: rgba(0, 0, 0, 0.6);
+  width: 33.3%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  align-content: center;
+  color: #f2f2f2;
+  font-family: "BrandonGrotesqueWeb-Medium", serif;
+  text-shadow: 2px 2px 6px rgba(242, 5, 135, 0.6);
+  -webkit-text-stroke: 0.3px #f20587;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  transition: opacity 0.7s;
+  opacity: 0;
+}
+#bahan .container .bahan .kain > .item-5::before, #bahan .container .bahan .oscar > .item-5::before {
+  display: grid;
+  content: "Regency";
+  background: rgba(0, 0, 0, 0.6);
+  width: 33.3%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  align-content: center;
+  color: #f2f2f2;
+  font-family: "BrandonGrotesqueWeb-Medium", serif;
+  text-shadow: 2px 2px 6px rgba(242, 5, 135, 0.6);
+  -webkit-text-stroke: 0.3px #f20587;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  transition: opacity 0.7s;
+  opacity: 0;
+}
+#bahan .container .bahan .kain .item-1:hover::before, #bahan .container .bahan .oscar .item-1:hover::before {
+  opacity: 1;
+}
+#bahan .container .bahan .kain .item-2:hover::before, #bahan .container .bahan .oscar .item-2:hover::before {
+  opacity: 1;
+}
+#bahan .container .bahan .kain .item-3:hover::before, #bahan .container .bahan .oscar .item-3:hover::before {
+  opacity: 1;
+}
+#bahan .container .bahan .kain .item-4:hover::before, #bahan .container .bahan .oscar .item-4:hover::before {
+  opacity: 1;
+}
+#bahan .container .bahan .kain .item-5:hover::before, #bahan .container .bahan .oscar .item-5:hover::before {
+  opacity: 1;
+}
+#bahan .container .bahan .kain > div {
+  padding: 0;
+  overflow: hidden;
+}
+#bahan .container .bahan .kain .item-2 img {
+  width: 300%;
+  height: 150%;
+  margin-top: -4em;
+  margin-left: -8em;
+}
+#bahan .container .bahan .oscar {
+  margin: 0;
+}
+#bahan .container .bahan .oscar > div {
+  padding-left: 0;
+  margin: 0;
+}
+#bahan .container .bahan .oscar img {
+  height: 100%;
+  object-fit: cover;
+}
+#bahan .container .bahan .oscar .item-4::before, #bahan .container .bahan .oscar .item-5::before {
+  width: 93%;
+  height: 50%;
 }
 
 /*# sourceMappingURL=index.css.map */
