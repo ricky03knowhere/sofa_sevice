@@ -165,8 +165,6 @@ body
 
 // Bahan
 #bahan
-  height: 2000px
-
   h3
     font-size: 1.5rem
     text-shadow: 1px 1px 1px $shadow-color
@@ -241,7 +239,7 @@ body
             width: 33.3%
             height: 100%
             position: absolute
-            text-align: center
+            justify-content: center
             align-content: center
             color: $ternary-color
             font-family: $primary-font, serif
@@ -292,3 +290,62 @@ body
             width: 93%
             height: 50%
 
+// Tentang
+#tentang
+  background: $ternary-color
+  height: 100em
+
+  h3
+    font-size: 1.5rem
+    text-shadow: 1px 1px 1px $shadow-color
+    border-bottom: 3px solid $shadow-color
+    position: relative
+    width: 6.5em
+    margin: auto
+    text-align: center
+
+  .row
+    margin-top: 8em
+
+    .img-wrapper
+      display: grid
+      justify-content: center
+      align-content: center
+      // align-self: center
+      // justify-content: center
+
+      .img-frame
+        text-align: center
+        .tentang-img
+          width: 70%
+        &::before
+          content: ""
+          display: block
+          width: 40%
+          height: 70%
+          position: absolute
+          background-image: url(/img/icons/bg-frame5.png)
+          background-position: center
+          background-size: cover
+          margin-top: -6.7em
+          // opacity: 0.5
+          margin-left: -1.3em
+
+    .tentang
+      // padding: 0
+    h4
+      font-family: $primary-font, serif
+      text-shadow: 1px 1px $ternary-color
+      text-transform: capitalize !important
+      font-size: 1.8rem
+      font-weight: bold
+      color: $text-color
+      margin-bottom: 1em
+      background: $secondary-color
+      display: inline-block
+      padding: .2em .5em
+    p
+      text-align: justify
+      text-shadow: .5px .5px 5px $secondary-color
+      font-size: 1.1rem
+      line-height: 2em

@@ -142,9 +142,6 @@ body {
   width: 100%;
 }
 
-#bahan {
-  height: 2000px;
-}
 #bahan h3 {
   font-size: 1.5rem;
   text-shadow: 1px 1px 1px rgba(242, 5, 135, 0.6);
@@ -215,7 +212,7 @@ body {
   width: 33.3%;
   height: 100%;
   position: absolute;
-  text-align: center;
+  justify-content: center;
   align-content: center;
   color: #f2f2f2;
   font-family: "BrandonGrotesqueWeb-Medium", serif;
@@ -233,7 +230,7 @@ body {
   width: 33.3%;
   height: 100%;
   position: absolute;
-  text-align: center;
+  justify-content: center;
   align-content: center;
   color: #f2f2f2;
   font-family: "BrandonGrotesqueWeb-Medium", serif;
@@ -251,7 +248,7 @@ body {
   width: 33.3%;
   height: 100%;
   position: absolute;
-  text-align: center;
+  justify-content: center;
   align-content: center;
   color: #f2f2f2;
   font-family: "BrandonGrotesqueWeb-Medium", serif;
@@ -269,7 +266,7 @@ body {
   width: 33.3%;
   height: 100%;
   position: absolute;
-  text-align: center;
+  justify-content: center;
   align-content: center;
   color: #f2f2f2;
   font-family: "BrandonGrotesqueWeb-Medium", serif;
@@ -287,7 +284,7 @@ body {
   width: 33.3%;
   height: 100%;
   position: absolute;
-  text-align: center;
+  justify-content: center;
   align-content: center;
   color: #f2f2f2;
   font-family: "BrandonGrotesqueWeb-Medium", serif;
@@ -337,6 +334,64 @@ body {
 #bahan .container .bahan .oscar .item-4::before, #bahan .container .bahan .oscar .item-5::before {
   width: 93%;
   height: 50%;
+}
+
+#tentang {
+  background: #f2f2f2;
+  height: 100em;
+}
+#tentang h3 {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 1px rgba(242, 5, 135, 0.6);
+  border-bottom: 3px solid rgba(242, 5, 135, 0.6);
+  position: relative;
+  width: 6.5em;
+  margin: auto;
+  text-align: center;
+}
+#tentang .row {
+  margin-top: 8em;
+}
+#tentang .row .img-wrapper {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+#tentang .row .img-wrapper .img-frame {
+  text-align: center;
+}
+#tentang .row .img-wrapper .img-frame .tentang-img {
+  width: 70%;
+}
+#tentang .row .img-wrapper .img-frame::before {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 70%;
+  position: absolute;
+  background-image: url(/img/icons/bg-frame5.png);
+  background-position: center;
+  background-size: cover;
+  margin-top: -6.7em;
+  margin-left: -1.3em;
+}
+#tentang .row h4 {
+  font-family: "BrandonGrotesqueWeb-Medium", serif;
+  text-shadow: 1px 1px #f2f2f2;
+  text-transform: capitalize !important;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0D0D0D;
+  margin-bottom: 1em;
+  background: #F29BD4;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+}
+#tentang .row p {
+  text-align: justify;
+  text-shadow: 0.5px 0.5px 5px #F29BD4;
+  font-size: 1.1rem;
+  line-height: 2em;
 }
 
 /*# sourceMappingURL=index.css.map */
