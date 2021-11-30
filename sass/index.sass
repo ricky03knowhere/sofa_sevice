@@ -18,7 +18,6 @@ $secondary-font: 'Aleo'
 // Kain
 $kain: (1:'Mb tech', 2:'Force', 3:'Ateja', 4:'Lapaloma', 5:'Regency')
 
-
 body
   font-family: $secondary-font, serif
   color: $text-color
@@ -293,14 +292,13 @@ body
 // Tentang
 #tentang
   background: $ternary-color
-  height: 100em
-
+  padding-bottom: 3em
   h3
     font-size: 1.5rem
     text-shadow: 1px 1px 1px $shadow-color
     border-bottom: 3px solid $shadow-color
     position: relative
-    width: 6.5em
+    width: 6.85em
     margin: auto
     text-align: center
 
@@ -349,3 +347,108 @@ body
       text-shadow: .5px .5px 5px $secondary-color
       font-size: 1.1rem
       line-height: 2em
+
+// Kontak
+#kontak
+  // height: 100em
+  
+  .row 
+    margin-top: 6em
+    .col-md-5
+      margin-top: 0
+      padding: 0
+      & > div
+        padding: 0
+  h3
+    font-size: 1.5rem
+    text-shadow: 1px 1px 1px $shadow-color
+    border-bottom: 3px solid $shadow-color
+    position: relative
+    width: 5em
+    margin: auto
+    text-align: center
+  h4
+    font-family: $primary-font, serif
+    text-shadow:  -1px -1px 2px $shadow-color, 2px 2px 1px $text-color
+    text-transform: capitalize !important
+    font-size: 1.8rem
+    font-weight: bold
+    color: $warning-color
+    // margin-bottom: 1em
+    display: inline-block
+    padding: .5em 1em
+    letter-spacing: .2rem
+    // -webkit-text-stroke: .01px white
+
+  
+  .card, .alamat
+    height: 100%
+    border-radius: 1em
+    box-shadow: 7px 7px 20px -5px $text-color
+    background: $success-color
+    text-shadow: .5px .5px 1px $shadow-color
+    margin-bottom: 2em
+
+  .map-wrapper
+    min-height: 30em
+    .card
+      padding: .3em
+      .map
+        display: inline-block
+        position: relative
+        width: 100%
+        height: 100%
+        border-radius: .5em
+
+  .kontak
+    height: 12em
+    width: 100%
+    font-size: 1.2rem
+    text-shadow: 1px 1px 1px $text-color
+    color: $ternary-color
+    .row
+      height: 100%
+      padding: 0 .5em
+      margin-top: 0
+      h4
+        padding: .5em
+      .title
+        padding: 0 !important
+        text-align: center
+        align-content: center
+        display: grid
+      .body
+        display: grid
+        text-align: center
+        align-content: center
+        // padding: 0.5em
+        // p
+        hr
+          height: 2px
+          border-radius: 1px
+        .x-hr
+          width: 2px
+          height:80%
+          position: absolute
+          // transform: translate(50%, -50%)
+          margin-top: 1.3em
+          left: 41.5%
+        h4
+          font-size: 1.2rem
+          display: inline-block
+          color: $secondary-color
+          text-shadow:  0px 0px 2px $text-color, 1px 1px 2px $text-color
+          i
+            font-size: 1.4em
+
+  .alamat
+    li:first-child
+      background: $success-color
+      padding: 8px 4px !important
+      h4
+        margin-bottom: 0
+    li
+      padding: .7em 2em !important
+      height: 100%
+      display: grid
+      align-content: center
