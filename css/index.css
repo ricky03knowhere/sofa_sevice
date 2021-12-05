@@ -346,7 +346,7 @@ body {
   border-bottom: 3px solid rgba(242, 5, 135, 0.6);
   position: relative;
   width: 6.85em;
-  margin: auto;
+  margin: 1em auto 3em !important;
   text-align: center;
 }
 #tentang .row {
@@ -394,6 +394,9 @@ body {
   line-height: 2em;
 }
 
+#kontak {
+  padding-bottom: 3em;
+}
 #kontak .row {
   margin-top: 6em;
 }
@@ -410,7 +413,7 @@ body {
   border-bottom: 3px solid rgba(242, 5, 135, 0.6);
   position: relative;
   width: 5em;
-  margin: auto;
+  margin: 1em auto 3em !important;
   text-align: center;
 }
 #kontak h4 {
@@ -436,7 +439,7 @@ body {
   min-height: 30em;
 }
 #kontak .map-wrapper .card {
-  padding: 0.3em;
+  padding: 4px;
 }
 #kontak .map-wrapper .card .map {
   display: inline-block;
@@ -503,6 +506,76 @@ body {
   height: 100%;
   display: grid;
   align-content: center;
+}
+
+#footer {
+  background: #F29BD4;
+  padding: 1em;
+}
+#footer .col-md-3 {
+  display: grid;
+  justify-content: center;
+}
+#footer .brand-wrapper {
+  padding: 0.5em 1em;
+  text-align: center;
+  background: white;
+  border-radius: 0.5em;
+}
+#footer .sosmed {
+  margin-top: 1em;
+  text-align: center;
+}
+#footer .sosmed .sosmed-wrapper {
+  line-height: 2.5em;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+  height: 2.5em;
+  width: 2.5em;
+  margin-left: 1em;
+  background: white;
+  border-radius: 2em;
+}
+#footer .sosmed .sosmed-wrapper:hover i::before {
+  background-position: 0% 0%;
+}
+#footer .sosmed .sosmed-wrapper .fab, #footer .sosmed .sosmed-wrapper .far {
+  font-size: 1.6rem;
+  color: #F29BD4;
+}
+#footer .sosmed .sosmed-wrapper i::before {
+  display: "";
+  top: 5.3px;
+  position: relative;
+  text-align: center;
+  background-size: 250% 250%;
+  background-position: 75% 75%;
+  transition: background 0.24s linear;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#footer .sosmed .sosmed-wrapper .fa-facebook-square::before {
+  background-image: linear-gradient(135deg, #0480fe 30%, #F29BD4 50%);
+}
+#footer .sosmed .sosmed-wrapper .fa-instagram::before {
+  background-image: linear-gradient(135deg, #ee258e 30%, #F29BD4 50%);
+}
+#footer .sosmed .sosmed-wrapper .fa-whatsapp::before {
+  background-image: linear-gradient(135deg, #11d458 30%, #F29BD4 50%);
+}
+#footer .sosmed .sosmed-wrapper .fa-envelope::before {
+  background-image: linear-gradient(135deg, #febd39 30%, #F29BD4 50%);
+}
+#footer p {
+  margin-top: 3em;
+  text-align: center;
+  line-height: 2em;
+}
+#footer p a {
+  text-decoration: none;
+  font-family: "BrandonGrotesqueWeb-Medium", serif;
 }
 
 /*# sourceMappingURL=index.css.map */
