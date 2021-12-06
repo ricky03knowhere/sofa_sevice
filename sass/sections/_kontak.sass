@@ -1,0 +1,102 @@
+@use '../main' as main
+@use '../variables' as var
+
+// Kontak
+#kontak
+  padding-bottom: 3em
+  
+  .row 
+    margin-top: 6em
+    .col-md-5
+      margin-top: 0
+      padding: 0
+      & > div
+        padding: 0
+  h3
+    @include main.section-title(5em)
+
+  h4
+    font-family: var.$primary-font, serif
+    text-shadow:  -1px -1px 2px var.$shadow-color, 2px 2px 1px var.$text-color
+    text-transform: capitalize !important
+    font-size: 1.8rem
+    font-weight: bold
+    color: var.$warning-color
+    // margin-bottom: 1em
+    display: inline-block
+    padding: .5em 1em
+    letter-spacing: .2rem
+    // -webkit-text-stroke: .01px white
+
+  
+  .card, .alamat
+    height: 100%
+    border-radius: 1em
+    box-shadow: 7px 7px 20px -5px var.$text-color
+    background: var.$success-color
+    text-shadow: .5px .5px 1px var.$shadow-color
+    margin-bottom: 2em
+
+  .map-wrapper
+    min-height: 30em
+    .card
+      padding: 4px
+      .map
+        display: inline-block
+        position: relative
+        width: 100%
+        height: 100%
+        border-radius: .5em
+
+  .kontak
+    height: 12em
+    width: 100%
+    font-size: 1.2rem
+    text-shadow: 1px 1px 1px var.$text-color
+    color: var.$ternary-color
+    .row
+      height: 100%
+      padding: 0 .5em
+      margin-top: 0
+      h4
+        padding: .5em
+      .title
+        padding: 0 !important
+        text-align: center
+        align-content: center
+        display: grid
+      .body
+        display: grid
+        text-align: center
+        align-content: center
+        // padding: 0.5em
+        // p
+        hr
+          height: 2px
+          border-radius: 1px
+        .x-hr
+          width: 2px
+          height:80%
+          position: absolute
+          // transform: translate(50%, -50%)
+          margin-top: 1.3em
+          left: 41.5%
+        h4
+          font-size: 1.2rem
+          display: inline-block
+          color: var.$secondary-color
+          text-shadow:  0px 0px 2px var.$text-color, 1px 1px 2px var.$text-color
+          i
+            font-size: 1.4em
+
+  .alamat
+    li:first-child
+      background: var.$success-color
+      padding: 8px 4px !important
+      h4
+        margin-bottom: 0
+    li
+      padding: .7em 2em !important
+      height: 100%
+      display: grid
+      align-content: center

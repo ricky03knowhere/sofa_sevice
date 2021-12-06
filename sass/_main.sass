@@ -1,0 +1,16 @@
+@use './variables' as var
+// Main
+body
+  font-family: var.$secondary-font, serif
+  color: var.$text-color
+
+// Mixin
+@mixin section-title($width)
+  font-size: 1.5rem
+  text-shadow: 1px 1px 1px var.$shadow-color
+  border-bottom: 3px solid var.$shadow-color
+  position: relative
+  width: $width
+  margin: 1em  auto 3em !important
+  text-align: center
+  

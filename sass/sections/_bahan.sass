@@ -1,0 +1,123 @@
+@use '../variables' as var
+@use '../main' as main
+
+// Bahan
+#bahan
+  h3
+    @include main.section-title(6.5em)
+
+  .container
+    margin-top: 6em !important
+    // padding: 0 2em
+    &>.row
+      height: 25em !important
+    .tagline
+      padding-left: 2.8em
+      align-self: center
+
+      h4
+        font-family: var.$primary-font, serif
+        color: var.$ternary-color
+        font-size: 2.6rem
+        line-height: 1.5em
+        word-spacing: .5em
+        text-shadow: 2px 2px 6px var.$text-color
+        -webkit-text-stroke: 1.8px var.$text-color
+
+        &::before
+          content: ""
+          display: block
+          width: 15em
+          height: 10em
+          position: absolute
+          background-image: url(/img/icons/background3.png)
+          background-position: center
+          background-size: cover
+          z-index: -999
+          margin-top: -2.2em
+          margin-left: -1.8em
+
+    .bahan 
+      h5
+        text-shadow: 1px 1px 1px var.$shadow-color
+        margin-bottom: 1em
+
+      .col-md-4
+        padding-right: 0
+        // padding-left: 0
+      .col-md-8
+        padding-left: 0
+        overflow: hidden
+
+      .row 
+        height: 20em
+      .kain img, .oscar img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        // filter: brightness(.7)
+
+          
+
+
+      .kain, .oscar
+        position: relative
+        
+        @each $i,$val in var.$kain
+          &>.item-#{$i}::before
+            display: grid
+            content: $val
+            background: rgba(0, 0, 0, 0.6)
+            width: 33.3%
+            height: 100%
+            position: absolute
+            justify-content: center
+            align-content: center
+            color: var.$ternary-color
+            font-family: var.$primary-font, serif
+            text-shadow: 2px 2px 6px var.$shadow-color
+            -webkit-text-stroke: .3px var.$primary-color
+            text-transform: capitalize
+            font-size: 1.2rem
+            transition: opacity .7s
+            opacity: 0
+        
+        @for $i from 1 through length(var.$kain)
+          & .item-#{$i}:hover::before
+            opacity: 1
+              
+
+      .kain 
+        > div
+          padding: 0
+          overflow: hidden
+        .item-2 img
+          width: 300%
+          height: 150%
+          margin-top: -4em
+          margin-left: -8em
+
+        .item-3 img
+          // width: 200%
+          // height: 150%
+          // margin-top: -1em
+          // margin-left: -3em
+          
+
+      .oscar
+        // position: relative
+        margin: 0
+        // height: 40%
+        // overflow: hidden
+        >div
+          padding-left: 0
+          // padding-right: 0
+          margin: 0
+          // padding: 0
+        img
+          height: 100%
+          object-fit: cover
+        .item-4,.item-5
+          &::before
+            width: 93%
+            height: 50%

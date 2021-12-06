@@ -1,0 +1,56 @@
+@use '../variables' as var
+@use '../main' as main
+
+// Tentang
+#tentang
+  background: var.$ternary-color
+  padding-bottom: 3em
+
+  h3
+    @include main.section-title(6.85em)
+
+  .row
+    margin-top: 8em
+
+    .img-wrapper
+      display: grid
+      justify-content: center
+      align-content: center
+      // align-self: center
+      // justify-content: center
+
+      .img-frame
+        text-align: center
+        .tentang-img
+          width: 70%
+        &::before
+          content: ""
+          display: block
+          width: 40%
+          height: 70%
+          position: absolute
+          background-image: url(/img/icons/bg-frame5.png)
+          background-position: center
+          background-size: cover
+          margin-top: -6.7em
+          // opacity: 0.5
+          margin-left: -1.3em
+
+    .tentang
+      // padding: 0
+    h4
+      font-family: var.$primary-font, serif
+      text-shadow: 1px 1px var.$ternary-color
+      text-transform: capitalize !important
+      font-size: 1.8rem
+      font-weight: bold
+      color: var.$text-color
+      margin-bottom: 1em
+      background: var.$secondary-color
+      display: inline-block
+      padding: .2em .5em
+    p
+      text-align: justify
+      text-shadow: .5px .5px 5px var.$secondary-color
+      font-size: 1.1rem
+      line-height: 2em

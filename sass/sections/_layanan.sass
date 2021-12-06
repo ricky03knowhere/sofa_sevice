@@ -1,0 +1,51 @@
+@use '../variables' as var
+@use '../main' as main
+// Layanan
+#layanan
+  margin-top: -5em
+  background: var.$ternary-color
+
+  h3
+    @include main.section-title(5em)
+
+  h4
+    font-family: var.$primary-font, serif
+    text-shadow: 1px 1px 1px var.$shadow-color
+    text-transform: capitalize !important
+    font-size: 1.8rem
+    font-weight: bold
+    color: var.$text-color
+    margin: .5em 0
+  
+  ul
+    border-radius: 1em
+    text-shadow: .5px .5px 1px var.$shadow-color
+    box-shadow: 0 0 20px 3px var.$shadow-color
+    margin-top: 7em
+
+  .row
+    margin: 0 3em
+
+    .col-md-5
+      margin-bottom: 8em !important
+
+  .layanan-img
+    width: 90%
+    margin-left: 4em
+
+  .img-frame
+    &::before
+      content: ""
+      display: block
+      width: 40%
+      height: 70%
+      position: absolute
+      background-image: url(/img/icons/frame222.png)
+      background-position: center
+      background-size: cover
+      margin-top: -2em
+      margin-left: 4em
+
+    &.second
+      margin-left: -5em
+      width: 100%
