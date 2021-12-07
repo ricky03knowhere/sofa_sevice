@@ -43,18 +43,21 @@
         background-size: 250% 250%
         background-position: 75% 75%
         transition: background .24s linear
+        background-clip: text
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
 
       @each $sosmed, $color in var.$sosmeds
         .fa-#{$sosmed}::before
           background-image: linear-gradient(135deg, $color 30%, var.$secondary-color 50%)
-
+  p, span
+    font-size: .8rem
   p
     margin-top: 3em
     text-align: center
     line-height: 2em
     a
+      font-size: .9rem
       text-decoration: none
       font-family: var.$primary-font, serif
       

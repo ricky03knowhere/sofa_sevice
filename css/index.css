@@ -6,6 +6,7 @@ body {
 #navbar {
   font-family: "BrandonGrotesqueWeb-Medium", serif;
   padding: 0;
+  transition: 0.2s ease;
 }
 #navbar .btn-action {
   border-radius: 50px;
@@ -97,7 +98,7 @@ body {
   border-bottom: 3px solid rgba(242, 5, 135, 0.6);
   position: relative;
   width: 5em;
-  margin: 1em auto 3em !important;
+  margin: 2.5em auto 3em !important;
   text-align: center;
 }
 #layanan h4 {
@@ -148,7 +149,7 @@ body {
   border-bottom: 3px solid rgba(242, 5, 135, 0.6);
   position: relative;
   width: 6.5em;
-  margin: 1em auto 3em !important;
+  margin: 2.5em auto 3em !important;
   text-align: center;
 }
 #bahan .container {
@@ -346,7 +347,7 @@ body {
   border-bottom: 3px solid rgba(242, 5, 135, 0.6);
   position: relative;
   width: 6.85em;
-  margin: 1em auto 3em !important;
+  margin: 2.5em auto 3em !important;
   text-align: center;
 }
 #tentang .row {
@@ -413,7 +414,7 @@ body {
   border-bottom: 3px solid rgba(242, 5, 135, 0.6);
   position: relative;
   width: 5em;
-  margin: 1em auto 3em !important;
+  margin: 2.5em auto 3em !important;
   text-align: center;
 }
 #kontak h4 {
@@ -553,6 +554,7 @@ body {
   background-size: 250% 250%;
   background-position: 75% 75%;
   transition: background 0.24s linear;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -568,12 +570,16 @@ body {
 #footer .sosmed .sosmed-wrapper .fa-envelope::before {
   background-image: linear-gradient(135deg, #febd39 30%, #F29BD4 50%);
 }
+#footer p, #footer span {
+  font-size: 0.8rem;
+}
 #footer p {
   margin-top: 3em;
   text-align: center;
   line-height: 2em;
 }
 #footer p a {
+  font-size: 0.9rem;
   text-decoration: none;
   font-family: "BrandonGrotesqueWeb-Medium", serif;
 }
