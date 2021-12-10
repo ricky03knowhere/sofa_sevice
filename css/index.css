@@ -5,8 +5,13 @@ body {
 
 #navbar {
   font-family: "Brandon Grotesque Medium", serif;
-  padding: 0 0 0.5em;
+  padding: 0;
   transition: 0.2s ease;
+}
+@media (max-width: 720px) {
+  #navbar {
+    padding: 0 0 0.8em;
+  }
 }
 #navbar .btn-action {
   border-radius: 50px;
@@ -77,6 +82,7 @@ body {
   padding: 0.4em 2em;
   color: #f2f2f2;
   position: absolute;
+  text-decoration: none;
   top: 50vh;
   left: 2.6em;
 }
@@ -87,7 +93,49 @@ body {
 #carousels .btn-action i {
   font-size: 1.2rem;
 }
+@media (max-width: 720px) {
+  #carousels {
+    top: -9em;
+  }
+  #carousels .carousel-control-prev, #carousels .carousel-control-next {
+    display: none !important;
+  }
+  #carousels .carousel-indicators button {
+    margin-top: -30%;
+  }
+  #carousels .btn-action {
+    position: relative;
+    top: -20%;
+    left: 1em;
+    width: 40%;
+    font-size: 1.2rem;
+  }
+  #carousels .btn-action:nth-last-child(1) {
+    background: #1C98A6;
+    left: 6px;
+  }
+  #carousels .carousel-item .carousel-caption {
+    width: 100%;
+    left: 2.4em !important;
+    top: 50vh;
+  }
+  #carousels .carousel-item p {
+    display: none;
+  }
+  #carousels .carousel-item img {
+    width: 70vw !important;
+    position: absolute;
+    top: 9.5em;
+    right: 0.5rem;
+  }
+}
 
+@media (max-width: 720px) {
+  #wave1 {
+    position: relative;
+    margin-top: -10.5em !important;
+  }
+}
 #layanan {
   margin-top: -5em;
   background: #f2f2f2;
@@ -154,6 +202,8 @@ body {
 }
 #bahan .container {
   margin-top: 6em !important;
+  overflow: hidden;
+  position: relative;
 }
 #bahan .container > .row {
   height: 25em !important;
@@ -474,6 +524,10 @@ body {
   display: grid;
   text-align: center;
   align-content: center;
+}
+#kontak .kontak .row .body a {
+  color: #f2f2f2;
+  text-decoration: none !important;
 }
 #kontak .kontak .row .body hr {
   height: 2px;

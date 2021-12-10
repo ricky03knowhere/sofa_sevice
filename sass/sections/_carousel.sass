@@ -58,6 +58,7 @@
     padding: .4em 2em
     color: var.$ternary-color
     position: absolute
+    text-decoration: none
     top: 50vh
     left: 2.6em
 
@@ -67,3 +68,40 @@
     
     i
       font-size: 1.2rem
+
+  // Mobile version
+  @media (max-width: 720px)
+    top: -9em
+    .carousel-control-prev, .carousel-control-next
+      display: none !important
+    .carousel-indicators button
+      margin-top: -30%
+    .btn-action
+      position: relative
+      top: -20%
+      left: 1em
+      width: 40%
+      font-size: 1.2rem
+      &:nth-last-child(1)
+        background: var.$success-color
+        left: 6px
+    .carousel-item
+      .carousel-caption
+        width: 100%
+        left: 2.4em !important
+        top: 50vh
+      p
+        display: none
+      img
+        width: 70vw !important
+        position: absolute
+        top: 9.5em
+        right: .5rem
+
+
+// Mobile version
+@media (max-width: 720px)
+  #wave1
+    position: relative
+    // background: red
+    margin-top: -10.5em !important

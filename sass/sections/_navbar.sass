@@ -2,8 +2,12 @@
 // Navbar
 #navbar
   font-family: var.$primary-font, serif
-  padding: 0 0 .5em
+  padding: 0
   transition: .2s ease 
+  // Mobile version
+  @media (max-width: 720px)
+    padding: 0 0 .8em
+    
   .btn-action
     border-radius: 50px
     background: var.$primary-color
