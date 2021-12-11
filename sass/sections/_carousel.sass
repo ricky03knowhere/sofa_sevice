@@ -5,7 +5,6 @@
     position: relative
     height: 77vh
     transition: transform 1s ease-in-out
-
     img
       width: 30% !important
       position: absolute
@@ -17,8 +16,6 @@
       top: 10em
       left: 3.7em
       text-align: left
-
-
       h5
         font-family: var.$primary-font, serif
         text-shadow: 1px 1px 1px var.$shadow-color
@@ -61,6 +58,7 @@
     text-decoration: none
     top: 50vh
     left: 2.6em
+    z-index: 999
 
     &:nth-last-child(1)
       background: var.$success-color
@@ -72,24 +70,29 @@
   // Mobile version
   @media (max-width: 720px)
     top: -9em
+    margin-bottom: 6em
     .carousel-control-prev, .carousel-control-next
       display: none !important
     .carousel-indicators button
-      margin-top: -30%
+      margin-top: -15%
     .btn-action
-      position: relative
-      top: -20%
-      left: 1em
-      width: 40%
+      position: absolute
+      top: 110%
+      left: 5% !important
+      width: 80%
       font-size: 1.2rem
+      // margin: auto
       &:nth-last-child(1)
         background: var.$success-color
-        left: 6px
+        top: 100%
     .carousel-item
       .carousel-caption
         width: 100%
-        left: 2.4em !important
-        top: 50vh
+        left: 0
+        top: 52vh
+        text-align: center
+        h5
+          font-size: 2.5rem
       p
         display: none
       img
@@ -102,6 +105,4 @@
 // Mobile version
 @media (max-width: 720px)
   #wave1
-    position: relative
-    // background: red
     margin-top: -10.5em !important
