@@ -248,7 +248,7 @@ body {
   #layanan .img-frame.third .layanan-img {
     width: 105%;
     margin-top: 3em;
-    margin-left: -0.5em;
+    margin-left: -0.7em;
   }
   #layanan #wave2 {
     margin-top: 3em;
@@ -266,11 +266,7 @@ body {
 }
 #bahan .container {
   margin-top: 6em !important;
-  overflow: hidden;
   position: relative;
-}
-#bahan .container > .row {
-  height: 25em !important;
 }
 #bahan .container .tagline {
   padding-left: 2.8em;
@@ -298,7 +294,10 @@ body {
   margin-top: -2.2em;
   margin-left: -1.8em;
 }
-#bahan .container .bahan h5 {
+#bahan .container .bahan {
+  overflow: hidden;
+}
+#bahan .container .bahan .bahan-title {
   text-shadow: 1px 1px 1px rgba(242, 5, 135, 0.6);
   margin-bottom: 1em;
 }
@@ -308,9 +307,6 @@ body {
 #bahan .container .bahan .col-md-8 {
   padding-left: 0;
   overflow: hidden;
-}
-#bahan .container .bahan .row {
-  height: 20em;
 }
 #bahan .container .bahan .kain img, #bahan .container .bahan .oscar img {
   width: 100%;
@@ -449,6 +445,102 @@ body {
 #bahan .container .bahan .oscar .item-4::before, #bahan .container .bahan .oscar .item-5::before {
   width: 93%;
   height: 50%;
+}
+@media (max-width: 720px) {
+  #bahan .tagline {
+    padding: 0 !important;
+    overflow-x: clip;
+  }
+  #bahan .tagline h4 {
+    transform: scale(0.8);
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+  }
+  #bahan .tagline h4::before {
+    transform: scale(0.95);
+    left: -3%;
+    top: 8%;
+  }
+  #bahan .bahan {
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    margin-top: 8em;
+  }
+  #bahan .bahan .bahan-title {
+    margin-bottom: 1em;
+  }
+  #bahan .bahan > .col-md-4 {
+    padding-left: 0;
+    margin-bottom: 3em !important;
+  }
+  #bahan .bahan > .col-md-8 {
+    margin-bottom: 3em !important;
+  }
+  #bahan .bahan .kain img, #bahan .bahan .oscar img {
+    height: 10em !important;
+  }
+  #bahan .bahan .kain, #bahan .bahan .oscar {
+    position: relative;
+  }
+  #bahan .bahan .kain > .item-1, #bahan .bahan .oscar > .item-1 {
+    position: relative;
+    margin-bottom: 1em;
+  }
+  #bahan .bahan .kain > .item-1::before, #bahan .bahan .oscar > .item-1::before {
+    width: 100% !important;
+    font-size: 1.3rem !important;
+  }
+  #bahan .bahan .kain > .item-2, #bahan .bahan .oscar > .item-2 {
+    position: relative;
+    margin-bottom: 1em;
+  }
+  #bahan .bahan .kain > .item-2::before, #bahan .bahan .oscar > .item-2::before {
+    width: 100% !important;
+    font-size: 1.3rem !important;
+  }
+  #bahan .bahan .kain > .item-3, #bahan .bahan .oscar > .item-3 {
+    position: relative;
+    margin-bottom: 1em;
+  }
+  #bahan .bahan .kain > .item-3::before, #bahan .bahan .oscar > .item-3::before {
+    width: 100% !important;
+    font-size: 1.3rem !important;
+  }
+  #bahan .bahan .kain > .item-4, #bahan .bahan .oscar > .item-4 {
+    position: relative;
+    margin-bottom: 1em;
+  }
+  #bahan .bahan .kain > .item-4::before, #bahan .bahan .oscar > .item-4::before {
+    width: 100% !important;
+    font-size: 1.3rem !important;
+  }
+  #bahan .bahan .kain > .item-5, #bahan .bahan .oscar > .item-5 {
+    position: relative;
+    margin-bottom: 1em;
+  }
+  #bahan .bahan .kain > .item-5::before, #bahan .bahan .oscar > .item-5::before {
+    width: 100% !important;
+    font-size: 1.3rem !important;
+  }
+  #bahan .bahan .kain > div {
+    padding: 1em;
+    overflow: hidden;
+  }
+  #bahan .bahan .kain .item-2 img {
+    height: 0;
+    width: 0;
+    margin-top: 0 !important;
+    margin-left: -10em !important;
+  }
+  #bahan .bahan .oscar .item-4, #bahan .bahan .oscar .item-5 {
+    margin-bottom: 1em !important;
+    padding: 0;
+  }
+  #bahan .bahan .oscar .item-4::before, #bahan .bahan .oscar .item-5::before {
+    height: 100% !important;
+  }
 }
 
 #tentang {
