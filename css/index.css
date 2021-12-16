@@ -55,8 +55,8 @@ body {
   font-size: 1rem;
   color: #0D0D0D;
   margin-top: 2em;
-  letter-spacing: 2px;
-  word-spacing: 10px;
+  word-spacing: 3px;
+  width: 65%;
 }
 #carousels .carousel-indicators button {
   background: #f20587;
@@ -83,7 +83,7 @@ body {
   color: #f2f2f2;
   position: absolute;
   text-decoration: none;
-  top: 50vh;
+  top: 55vh;
   left: 2.6em;
   z-index: 999;
 }
@@ -583,7 +583,7 @@ body {
   margin-top: -5.8em;
   margin-left: -2.2em;
 }
-#tentang .row h4 {
+#tentang .row .tentang h4 {
   font-family: "Brandon Grotesque Medium", serif;
   text-shadow: 1px 1px #f2f2f2;
   text-transform: capitalize !important;
@@ -595,7 +595,7 @@ body {
   display: inline-block;
   padding: 0.2em 0.5em;
 }
-#tentang .row p {
+#tentang .row .tentang p {
   text-align: justify;
   text-shadow: 0.5px 0.5px 5px #F29BD4;
   font-size: 1rem;
@@ -608,6 +608,9 @@ body {
   #tentang .img-wrapper {
     margin-bottom: 12em;
     padding: 0;
+  }
+  #tentang .img-wrapper .img-frame {
+    overflow-x: clip;
   }
   #tentang .img-wrapper .img-frame .tentang-img {
     width: 60% !important;
@@ -622,11 +625,11 @@ body {
   }
   #tentang .tentang h4 {
     text-align: center;
-    display: block;
-    margin-bottom: 1.5em;
+    display: block !important;
+    margin-bottom: 1.5em !important;
   }
   #tentang .tentang p {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
   }
 }
 
@@ -656,7 +659,7 @@ body {
   font-family: "Brandon Grotesque Medium", serif;
   text-shadow: -1px -1px 2px rgba(242, 5, 135, 0.6), 2px 2px 1px #0D0D0D;
   text-transform: capitalize !important;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #F2DE4E;
   display: inline-block;
@@ -669,7 +672,6 @@ body {
   box-shadow: 7px 7px 20px -5px #0D0D0D;
   background: #1C98A6;
   text-shadow: 0.5px 0.5px 1px rgba(242, 5, 135, 0.6);
-  margin-bottom: 2em;
 }
 #kontak .map-wrapper {
   min-height: 30em;
@@ -685,9 +687,8 @@ body {
   border-radius: 0.5em;
 }
 #kontak .kontak {
-  height: 12em;
-  width: 100%;
-  font-size: 1.2rem;
+  height: 14em;
+  font-size: 1rem;
   text-shadow: 1px 1px 1px #0D0D0D;
   color: #f2f2f2;
 }
@@ -697,7 +698,10 @@ body {
   margin-top: 0;
 }
 #kontak .kontak .row h4 {
-  padding: 0.5em;
+  padding: 0 0.5em;
+}
+#kontak .kontak .row h4 .fas {
+  font-size: 4.5rem;
 }
 #kontak .kontak .row .title {
   padding: 0 !important;
@@ -746,6 +750,34 @@ body {
   height: 100%;
   display: grid;
   align-content: center;
+  word-spacing: 3px;
+}
+@media (max-width: 720px) {
+  #kontak #lokasi {
+    margin-bottom: 2em;
+  }
+  #kontak .kontak {
+    margin: 12px !important;
+    height: 100%;
+    padding: 2em 0;
+  }
+  #kontak .kontak h4:nth-child(1) {
+    margin-bottom: 1.5em;
+  }
+  #kontak .kontak .x-hr {
+    width: 85% !important;
+    height: 2px !important;
+    left: 0.5em !important;
+    margin: 1em;
+    top: 36%;
+  }
+  #kontak .kontak .y-hr {
+    margin: 1em;
+  }
+  #kontak .alamat {
+    margin: 3.5em 12px;
+    height: 80%;
+  }
 }
 
 #footer {
@@ -821,6 +853,11 @@ body {
   font-size: 0.9rem;
   text-decoration: none;
   font-family: "Brandon Grotesque Medium", serif;
+}
+@media (max-width: 720px) {
+  #footer {
+    padding-top: 3em;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
