@@ -4,6 +4,13 @@
   font-family: var.$primary-font, serif
   padding: 0
   transition: .2s ease 
+
+  .navbar-nav .nav-item
+    &:last-child .nav-link.active
+      color: #ffcdef
+    & .nav-link.active
+      color: var.$shadow-color
+
   // Mobile version
   @media (max-width: 720px)
     padding: 0 0 .8em

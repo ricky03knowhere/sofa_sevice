@@ -8,6 +8,12 @@ body {
   padding: 0;
   transition: 0.2s ease;
 }
+#navbar .navbar-nav .nav-item:last-child .nav-link.active {
+  color: #ffcdef;
+}
+#navbar .navbar-nav .nav-item .nav-link.active {
+  color: rgba(242, 5, 135, 0.6);
+}
 @media (max-width: 720px) {
   #navbar {
     padding: 0 0 0.8em;
@@ -83,7 +89,7 @@ body {
   color: #f2f2f2;
   position: absolute;
   text-decoration: none;
-  top: 55vh;
+  top: 54vh;
   left: 2.6em;
   z-index: 999;
 }
